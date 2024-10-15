@@ -82,7 +82,7 @@ max_error = 0.1
 output = []
 for expr in produce_all_combinations(5):
     expr = consolidate_expr(expr)
-    coefs = calc_coefs(expr, extras=True)
+    coefs = calc_coefs(expr)
     output.append(coefs)
     print(coefs)
     if coefs[0] < max_error:
